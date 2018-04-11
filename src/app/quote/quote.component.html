@@ -1,5 +1,22 @@
 <div class="card mb-4">
+
     <div class="card-body">
         {{ quote.content }}
     </div>
+
+    <div class="card-footer">
+
+        <div *ngIf="editing">
+            <input type="text" [(ngModel)]="editValue">
+            <a href="#" (click)="onUpdate()">Save</a>
+            <a href="#" (click)="onCancel()">Cancel</a>
+        </div>
+
+        <div *ngIf="!editing">
+            <a href="#" (click)="onEdit()">Edit</a>
+            <a href="#" (click)="onDelete()">Delete</a>
+        </div> 
+
+    </div>
+
 </div>
