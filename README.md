@@ -1,3 +1,5 @@
+ng2-laravel Frontend project from Academind's Laravel + Angular 2 / Vue.js 2 Youtube Series to be used with laravel-ng2-vue API.
+
 # Ng2Laravel
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
