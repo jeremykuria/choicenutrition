@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { QuoteService } from '../quote.service';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-new-quote',
@@ -9,7 +10,9 @@ import { QuoteService } from '../quote.service';
 })
 export class NewQuoteComponent implements OnInit {
 
-  constructor(private quoteService: QuoteService) { }
+  constructor(private quoteService: QuoteService) {
+
+   }
 
   ngOnInit() {
   }

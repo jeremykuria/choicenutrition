@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule} from '@angular/forms';
+import { ReactiveFormsModule} from '@angular/forms';
 
 import { QuoteService } from './quote.service';
 
@@ -11,6 +12,13 @@ import { QuotesComponent } from './quotes/quotes.component';
 import { NewQuoteComponent } from './new-quote/new-quote.component';
 
 import { routing } from './app.routing';
+import { SignupComponent } from './signup/signup.component';
+import { SigninComponent } from './signin/signin.component';
+import { AuthService } from './auth.service';
+import { HomeComponent } from './home/home.component';
+import { ItemsComponent } from './items/items.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ItemsService } from './items/items.service';
 
 
 @NgModule({
@@ -18,15 +26,21 @@ import { routing } from './app.routing';
     AppComponent,
     QuoteComponent,
     QuotesComponent,
-    NewQuoteComponent
+    NewQuoteComponent,
+    SignupComponent,
+    SigninComponent,
+    HomeComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
-    routing
+    routing,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [QuoteService],
+  providers: [QuoteService,AuthService,ItemsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

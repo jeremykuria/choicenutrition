@@ -1,19 +1,93 @@
 <div id="app">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <a href="#" [routerLink]="['/']">Quotes</a>
-        <a href="#" [routerLink]="['/new-quote']">Add a new Quote</a>
-      </div>
-    </div>
-    <hr>
-    <div class="row">
-      <div class="col-xs-12">
-        <router-outlet>
-          
-        </router-outlet>
-      </div>
-    </div>
-  </div>
-</div>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #0493f8;">
+    <a class="navbar-brand" href="#">
+      <img src="assets/images/logo-02.png" style="width:150px;height:60px;" alt="Choice Nutrition" />
 
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" [routerLink]="['/products']">Products <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" [routerLink]="['/signin']">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">About Us</a>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <!-- <div class="row">
+          <div class="col-md-12"  > -->
+  <router-outlet>
+
+  </router-outlet>
+  <!-- </div>
+        </div> -->
+  <br />
+  <br />
+  <br />
+
+  <!-- <footer class=" " style="background-color: cornflowerblue">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2018 Choice Nutrition<a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    <p>P.O BOX: 50995-00100 Nairobi Kenya. </p>
+    <p>Email: info.choicenutrition@gmail.com</p>
+    <p>Tel: +254720803547 or +254774686386</p>
+  </footer> -->
+  <hr />
+  <footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>© 2018 Choice Nutrition · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    <p>P.O BOX: 50995-00100 Nairobi Kenya. </p>
+    <p>Email: info.choicenutrition@gmail.com</p>
+    <p>Tel: +254720803547 or +254774686386</p>
+  </footer>
+  <!-- <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__item">
+          <form action="//getbootstrap.us13.list-manage.com/subscribe/post?u=e3428dd6b8fda73bc5ba8b6e6&amp;id=198881a019"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+            <div class="d-md-flex justify-content-between align-items-center">
+              <div class="form-group">
+                <h5 class="mb-1">Get new themes in your inbox!</h5>
+                <div class="form-text mt-0">New themes or big discounts. Never spam.</div>
+              </div>
+              <div id="signup_footer" class="d-flex align-items-start">
+                <div class="form-group w-100 mr-2">
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e3428dd6b8fda73bc5ba8b6e6_198881a019"
+                      tabindex="-1" value=""></div>
+                  <input id="mce-EMAIL" class="footer__email-input form-control form-control--muted" name="EMAIL" type="email"
+                    aria-describedby="footerEmail" placeholder="Email address">
+                </div>
+                <input class="btn btn-brand" type="submit" value="Subscribe" name="subscibe" id="mc-embedded-subscribe">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="footer__item d-lg-flex justify-content-lg-between align-items-lg-center">
+          <ul id="menu-footer" class="nav sub-nav footer__sub-nav">
+            <li id="menu-item-1194" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1194"><a
+                title="Help Center" href="https://themes.zendesk.com/hc/en-us">Help Center</a></li>
+            <li id="menu-item-119" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-119"><a
+                title="Terms of Service" href="https://themes.getbootstrap.com/terms/">Terms of Service</a></li>
+            <li id="menu-item-117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-117"><a
+                title="Licenses" href="https://themes.getbootstrap.com/licenses/">Licenses</a></li>
+          </ul>
+          <p class="hidden-sm-down d-none d-lg-block">Trying to redownload a theme? Use our <a href="https://themes.getbootstrap.com/redownload/">redownload
+              page.</a></p>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+</div>

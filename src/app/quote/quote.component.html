@@ -11,11 +11,12 @@
             <a href="#" (click)="onUpdate()">Save</a>
             <a href="#" (click)="onCancel()">Cancel</a>
         </div>
-
+        <!-- to bind to properties use routerLink with square brackets -->
         <div *ngIf="!editing">
             <a href="#" (click)="onEdit()">Edit</a>
             <a href="#" (click)="onDelete()">Delete</a>
         </div> 
+        <!-- <a [routerLink]="['/quote', quote.id]">Edit</a> -->
 
     </div>
 

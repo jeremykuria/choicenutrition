@@ -1,0 +1,45 @@
+<!--#f is the js rep of the form which is then passed to the fn-->
+<div class="row">
+  <br>
+  <br>
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <strong>  Wholesell & Distributor of Feeds Additives & supplements</strong>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img class="img-responsive" src="assets/images/image1.jpeg" alt="Product1">
+              <div class="caption">
+                <h5>Supplements</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <form (ngSubmit)='ngSignin(f)' #f="ngForm">
+          <div class="form-group">
+            <label for="email">Mail address:</label>
+            <input type="email" id="email" name="email" ngModel class="form-control" required />
+          </div>
+          <div class="form-group">
+            <label for="password">password</label>
+            <input type="password" id="password" name="password" ngModel class="form-control" required />
+          </div>
+
+          <button type="submit" [disabled]="!f.valid" class="btn btn-primary">Sign In</button>
+        </form>
+
+      </div>
+    </div>
+
+
+  </div>
+</div>
